@@ -15,7 +15,7 @@ namespace pavlinter\stickyFooter;
  */
 class StickyFooterAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = "@vendor/pavlinter/yii2-stickyFooter/stickyFooter/assets";
+    public $sourcePath = "@vendor/pavlinter/yii2-sticky-footer/stickyFooter/assets";
 
     public $css = [
         'css/jquery.stickyfooter.min.css',
@@ -27,7 +27,7 @@ class StickyFooterAsset extends \yii\web\AssetBundle
 
     public function init()
     {
-        $min = YII_ENV_DEV ? '' : '.min';
+        $min = YII_DEBUG ? '' : '.min';
         $this->js[] = 'js/jquery.stickyfooter' . $min .'.js';
         parent::init();
     }
