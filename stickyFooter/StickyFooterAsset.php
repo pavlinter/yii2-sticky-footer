@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package yii2-stickyFooter
+ * @package yii2-sticky-footer
  * @author Pavels Radajevs <pavlinter@gmail.com>
  * @copyright Copyright &copy; Pavels Radajevs <pavlinter@gmail.com>, 2015
  * @version 1.0.0
