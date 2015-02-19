@@ -23,5 +23,9 @@ to the require section of your `composer.json` file.
 Usage
 -----------------------
 ```php
-
+<?php \pavlinter\stickyFooter\StickyFooter::begin(['id' => 'myFooter','contentSelector' => "#wrapper"]) ?>
+    <div id="footer">
+        footer
+    </div>
+<?php \pavlinter\stickyFooter\StickyFooter::end() ?>
 ```

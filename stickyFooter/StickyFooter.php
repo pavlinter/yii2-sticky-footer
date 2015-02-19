@@ -28,6 +28,10 @@ class StickyFooter extends Widget
      */
     public $options = [];
     /**
+     * @var string content selector
+     */
+    public $contentSelector = "#wrapper";
+    /**
      * @var array javascript settings
      */
     public $clientOptions = [];
@@ -47,6 +51,9 @@ class StickyFooter extends Widget
                 $this->options['id'] = $this->id;
             }
         }
+
+        $this->clientOptions['content'] = $this->contentSelector;
+
         echo Html::beginTag('div', $this->options) . "\n";
     }
 
