@@ -32,6 +32,10 @@ class StickyFooter extends Widget
      */
     public $contentSelector = "#wrapper";
     /**
+     * @var string content selector
+     */
+    public $frameSelector;
+    /**
      * @var array javascript settings
      */
     public $clientOptions = [];
@@ -53,7 +57,9 @@ class StickyFooter extends Widget
         }
 
         $this->clientOptions['content'] = $this->contentSelector;
-
+        if ($this->frameSelector) {
+            $this->clientOptions['frame'] = $this->frameSelector;
+        }
         echo Html::beginTag('div', $this->options) . "\n";
     }
 
