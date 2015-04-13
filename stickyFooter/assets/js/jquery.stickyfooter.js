@@ -4,7 +4,6 @@
  * Copyright 2014 miWebb
  * Released under the MIT license
  */
-
 (function($, window, undefined) {
 	'use strict';
 
